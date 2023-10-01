@@ -1,4 +1,4 @@
-# SmartSolveAI_Unified_ChatBot_Internship_Project
+# SmartSolveAI Unified ChatBot Internship Project
 
 <center>
 <img src="https://github.com/tusuii/SmartSolveAI_Unified_ChatBot_Internship_Project/blob/main/ngrok/WhatsApp-BOT-Image-2_2.gif" width="500" height="400">
