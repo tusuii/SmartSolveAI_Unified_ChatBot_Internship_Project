@@ -1,0 +1,2 @@
+# SmartSolveAI_Unified_ChatBot_Internship_Project
+Industry Academia Community Activity Internship Project Unified ChatBot Using Rasa framework
