@@ -1,0 +1,212 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: provide_details
+  - action: utter_ask_name
+  - intent: provide_name
+    entities:
+      - name: subodh
+  - action: utter_ask_email
+  - intent: provide_email
+    entities:
+      - email: "subkamble@gmail.com"
+  - action: action_save_data
+  - action: utter_thanks
+
+- story: selecting all data
+  steps:
+    - intent: show_all_data
+    - action: action_show_all_data
+
+
+
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+  - action: utter_happy
+
+- story: apply path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: where_to
+  - action: utter_where_to
+
+- story: group updates path
+  steps:
+  - intent: group_info
+  - action: utter_group_info
+
+- story: start date
+  steps:
+  - intent: start_when
+  - action: utter_start_when
+
+- story: difference
+  steps:
+  - intent: difference
+  - action: utter_difference
+
+- story: offerletter-cert
+  steps:
+  - intent: offerletter-cert
+  - action: utter_offerletter-cert
+
+- story: domains
+  steps:
+  - intent: domains
+  - action: utter_domains
+
+- story: internship help
+  steps:
+  - intent: internship-help
+  - action: utter_internship-help
+
+- story: apointment_letter
+  steps:
+  - intent: apointment_letter
+  - action: utter_apointment_letter
+
+- story: internship_completion
+  steps:
+  - intent: internship_completion
+  - action: utter_internship_completion
+
+- story: more_than_one_domain
+  steps:
+  - intent: more_than_one_domain
+  - action: utter_more_than_one_domain
+
+- story: choose-change_domain-duration
+  steps:
+  - intent: choose-change_domain-duration
+  - action: utter_choose-change_domain-duration
+
+- story: paid
+  steps:
+  - intent: paid
+  - action: utter_paid
+
+- story: iac
+  steps:
+  - intent: iac
+  - action: utter_iac
+
+- story: eligiblity-selection_criteria
+  steps:
+  - intent: eligiblity-selection_criteria
+  - action: utter_eligiblity-selection_criteria
+
+- story: graduates_freshers
+  steps:
+  - intent: graduates_freshers
+  - action: utter_graduates_freshers
+
+
+- story: timeings
+  steps:
+  - intent: timeings
+  - action: utter_timeings
+
+
+- story: machine
+  steps:
+  - intent: machine
+  - action: utter_machine
+
+- story: how_to_choose_domain
+  steps:
+  - intent: how_to_choose_domain
+  - action: utter_how_to_choose_domain
+
+- story: data
+  steps:
+  - intent: data
+  - action: utter_data
+
+
+- story: perks_of_iac
+  steps:
+  - intent: perks_of_iac
+  - action: utter_perks_of_iac
+
+
+- story: fees
+  steps:
+  - intent: fees
+  - action: utter_fees
+
+- story: activity_participation
+  steps:
+  - intent: activity_participation
+  - action: utter_activity_participation
+
+- story: work_hours
+  steps:
+  - intent: work_hours
+  - action: utter_work_hours
+
+- story: necessary_to_join
+  steps:
+  - intent: necessary_to_join
+  - action: utter_necessary_to_join
+
+
+- story: flexiblity
+  steps:
+  - intent: flexiblity
+  - action: utter_flexiblity
+
+- story: previous_record
+  steps:
+  - intent: previous_record
+  - action: utter_previous_record
+  
+
+- story: how_conducted
+  steps:
+  - intent: how_conducted
+  - action: utter_how_conducted
+
+- story: kaise_apply
+  steps:
+  - intent: kaise_apply
+  - action: utter_kaise_apply
+
+- story: kaise_telegram
+  steps:
+  - intent: kaise_telegram
+  - action: utter_kaise_telegram
+
+- story: kaise_help
+  steps:
+  - intent: kaise_help
+  - action: utter_kaise_help
+
+- story: kaise_domain
+  steps:
+  - intent: kaise_domain
+  - action: utter_kaise_domain
+
+- story: kaise_samay
+  steps:
+  - intent: kaise_samay
+  - action: utter_kaise_samay
+
+- story: kaise_device
+  steps:
+  - intent: kaise_device
+  - action: utter_kaise_device
+
+- story: kaise_res
+  steps:
+  - intent: kaise_res
+  - action: utter_kaise_res
+

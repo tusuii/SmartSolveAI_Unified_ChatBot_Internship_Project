@@ -1,0 +1,222 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - bot_challenge
+  - where_to
+  - group_info
+  - start_when
+  - difference
+  - offerletter-cert
+  - domains
+  - internship-help
+  - apointment_letter
+  - internship_completion
+  - more_than_one_domain
+  - choose-change_domain-duration
+  - paid
+  - eligiblity-selection_criteria
+  - graduates_freshers
+  - timeings
+  - machine
+  - how_to_choose_domain
+  - data
+  - iac
+  - perks_of_iac
+  - fees
+  - activity_participation
+  - work_hours
+  - necessary_to_join
+  - flexiblity
+  - previous_record
+  - how_conducted
+  - start
+  - provide_details
+  - provide_name
+  - provide_email
+  - show_all_data
+  - deny
+  - kaise_apply
+  - kaise_telegram
+  - kaise_help
+  - kaise_domain
+  - kaise_samay
+  - kaise_device
+  - kaise_res
+
+entities:
+  - name
+  - email
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+  email:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: email
+
+actions:
+  - action_save_data
+  - action_show_all_data
+  
+responses:
+
+  utter_ask_name:
+  - text: "Sure, please give me your name ?"
+
+  utter_ask_email:
+  - text: "Please give me your email"
+
+  utter_thanks:
+  - text: "Thanks, your data Name: {name} and Email: {email} is saved in the database."
+
+  utter_greet:
+  - text: "Hey! How are you? Welcome to Industry Academia Community"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_affirm:
+  - text: "Welcome"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_where_to:
+  - text: "Please click the link to signup for the free online internship. [Link](https://www.industryacademiacommunity.com/courses/Internships)" 
+
+  utter_group_info:
+  - text: "Please join our Telegram Channel [Link](https://t.me/+uXmD1vTLpttjN2Vl)."
+
+  utter_start_when:
+  - text: "The internship is starting on Saturday, 1st July 2023"
+
+  utter_difference:
+  - text: "The difference in the internship duration is to provide you flexibility to accommodate your academic requirements, as many colleges do not allow their students to do internship while the academic sessions are in progress. Such students can contribute more hours and finish their internship early."
+
+  utter_domains:
+  - text: "There are 16 IT & 7 Management domains for internship:
+Cloud Computing,  Digital Marketing, DevOps, Human Resources, Machine Learning, Data Analytics, Artificial Intelligence, Business Research, Web Development, Java, Python,
+Business Development, React JS, UI/UX, Node.js, Operations Management, Android Development, Quality Assurance, Flutter, Cyber Security, Product Management,  Project Management, Game Development, Blockchain, Full Stack Development, Marketing Management"
+
+  utter_offerletter-cert:
+  - text: "The participants will get following certificates and letters:
+> Appointment letter within 15 days after the interns choose the field of interest
+> Industry Training Certificate (further to completing assessment)
+> Experience Certificate from Cloud Counselage (on successful completion of internship)
+> Appreciation letter/certificate ( For top performers)"
+
+  utter_internship-help:
+  - text: " Participants will get help related to understanding the problem statement and the project delivery process."
+
+  utter_apointment_letter:
+  - text: "We will be providing appointment letters within 15 days after the interns choose the field of interest."
+
+  utter_internship_completion:
+  - text: "The interns have to complete the tasks as per the instructions within the deadlines."
+
+  utter_more_than_one_domain:
+  - text: "We encourage focusing on one field at a time as this will help yield better results."
+
+  utter_choose-change_domain-duration:
+  - text: "Participants will get a chance to choose/change the domain and duration for internship from 14th July to 16th July."
+
+  utter_paid:
+  - text: "Internship and other IAC activities are absolutely FREE.
+There is no cost involved for participating in the community activities (including internships) as this is a noble initiative taken up by Cloud Counselage Pvt. Ltd. in association with Gift- A-Career Foundation, to help students, get job-ready, in time! "
+
+  utter_eligiblity-selection_criteria:
+  - text: "This internship is designed for students in higher education courses and any such student aspiring for IT and Management career can participate in this internship."
+
+  utter_graduates_freshers:
+  - text: "This internship program is designed for undergraduate students but if graduates and freshers feel it is beneficial for them then they can participate in this internship program"
+
+  utter_timeings:
+  - text: "For schedule of internship please refer [Link](https://cloudcounselage0-my.sharepoint.com/:i:/g/personal/member_industryacademiacommunity_com/ERJOSLijg_JPlJJ_kyvpGnYBhLvwiFnigi4g5HRcBveZGQ?e=cnor6O) The interns are expected to contribute minimum 1 to 2 hours on a daily basis."
+
+  utter_machine:
+  - text: "Yes, Laptop/PC Required."
+
+  utter_how_to_choose_domain:
+  - text: "A form will be made available to the interns to choose the domain and the duration of the internship."
+
+  utter_data:
+  - text: "Yes, the data will be provided for data analytics."
+
+# IAC Answers =====================================>
+  utter_iac:
+  - text: "Industry-Academia Community (IAC) is a part of 'Industry-Academia Connect' initiative of Cloud Counselage Pvt. Ltd. in association with Gift-A-Career Foundation created for Industry & Academia PAN India. This community engages and supports higher education students and freshers by providing them with 360-degree professional development and career growth opportunities through Career Vision, Career Guidance, Industry & Corporate Exposure, and Hands-on experience/remote internships on live projects. All the benefits of the community can be availed from any corner of the world as it is an online community and at no cost to the members."
+
+  utter_perks_of_iac:
+  - text: "1. Industry Exposure Workshops
+2. Career Vision
+3. Career Guidance
+4. Industry Training
+5. Internship Program
+6. Industry Visits
+7. CV & Interview Preparations
+8. Soft Skills Workshops
+9. Career Assessments
+10. Hackathons
+11. Job Placements
+12. Entrepreneurship Program"
+
+  utter_fees:
+  - text: "This community is created with the intent to eradicate the perpetual unemployability issue amongst the fresh graduates of India. Cloud Counselage is committed to this social cause and therefore the students can be part of this community at no cost. They do not pay any fees and there are no hidden charges for being part of this community and for availing the benefits of the programs offered through this community."
+
+  utter_activity_participation:
+  - text: "You can participate in any activities of your choice. However, each activity has its own benefit. The more activities that you participate in the more career/ job-ready you become."
+
+  utter_work_hours:
+  - text: "You are expected to spend 1-2 hours a week completing the professional development activities under IAC. This will ensure continuous professional development."
+
+  utter_necessary_to_join:
+  - text: "You agree to become a member of the community as soon as you sign up for the app or express interest to join the community. The benefits of the app and in turn, the community are only available to the community members. Moreover, there are no fees to become a member of the community."
+
+  utter_flexiblity:
+  - text: "Yes, having worked with the student community for the last few years, we completely understand their academic commitments and therefore offer the flexibility to participate in the activities at their convenience. With the events that are conducted at a stipulated time, the recordings are provided. During the internships, the students can work at their convenience however, will need to meet the deadlines for submission."
+
+  utter_previous_record:
+  - text: "More than 90% of the community members have rated us 4 & 5 out of 5 for their overall experience of the activities. The reviews of the participant are available on our iReviews page and social media pages. The students have experienced a boost in confidence, especially during the interview, were able to channelize the interview, and have been placed in companies like Oracle, Microsoft, Capgemini, TCS, Wipro, Deloitte, etc. In terms of higher education, they were able to secure places in reputed universities in U.S., Australia, Ireland, etc."
+
+  utter_how_conducted:
+  - text: "This is a 6-12 weeks online internship, that will be conducted during the vacation (generally) and you can choose any of one domain from the ones that we offer. This is a guaranteed internship for all the students in the age group of 17-24 years who aspire to IT & Management careers. There will be no interviews or aptitude tests required for participating in this internship. To keep the internship focused and reduce the stress to the students we allow working on only one technology at a time. The interns who have successfully submitted the project, get an experience certificate. The interns who have performed exceptionally well and have delivered high-quality deliverables are provided with ‘letters of appreciation' as well and are facilitated in the ‘Industry Academia Excellence Awards’."
+
+  utter_kaise_apply:
+  - text: "https://www.industryacademiacommunity.com/courses/Internships"
+
+  utter_kaise_telegram:
+  - text: "https://t.me/+uXmD1vTLpttjN2Vl"
+
+  utter_kaise_help:
+  - text: "Participants will get help related to understanding the problem statement and the project delivery process."
+  
+  utter_kaise_domain:
+  - text: "हम एक समय में एक ही क्षेत्र पर ध्यान केंद्रित करने को प्रोत्साहित करते हैं क्योंकि इससे बेहतर परिणाम प्राप्त करने में मदद मिलेगी।"
+
+  utter_kaise_samay:
+  - text: "1 से 2 घंटे योगदान करने की अपेक्षा की जाती है।"
+
+  utter_kaise_device:
+  - text: "हाँ, लैपटॉप आवश्यक है।"
+
+  utter_kaise_res:
+  - text: "हां, डेटा एनालिटिक्स के लिए डेटा उपलब्ध कराया जाएगा।"
+
+  
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

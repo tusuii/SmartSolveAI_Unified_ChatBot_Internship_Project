@@ -1,0 +1,566 @@
+version: "3.1"
+
+nlu:
+
+- intent: provide_details
+  examples: |
+    - hey can i provide you my details to connect
+    - can you provide my details
+    - I want to provide my details
+    - Can I give you my information?
+    - Here are my details
+    - Let me give you my name and email
+    - Sure, I'll provide my details
+    - i want to provide my data
+
+- intent: provide_name
+  examples: |
+    - [subodh](name)
+    - [jay](name)
+    - [suvratam](name)
+    - [ankit](name)
+    - [alex](name)
+    - [prasad](name)
+    - [shivam](name)
+
+- intent: provide_email
+  examples: |
+    - [subkamble@gmail.com](email)
+    - [alex@abc.com](email)
+    - [jay@gmail.com](email)
+    - [prasad@abc.com](email)
+    - [shivam@gmail.com](email)
+
+- intent: show_all_data
+  examples: |
+    - What are my data in the database
+    - Display all my records
+    - What are my entries recorded in the database
+    - can you please show my data
+    - i want to see my data
+    - i want to view my information
+    - please show me my data
+    - what data is stored here?
+
+
+
+- intent: greet
+  examples: |
+    - hi
+    - hii
+    - howdy
+    - heyyy
+    - whatsup
+    - wassup
+    - supp
+    - hey
+    - hello
+    - Greetings!
+    - Salutations!
+
+- intent: start
+  examples: |
+    - /start
+    - welcome to IAC, please ask your query
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - thank you
+    
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: where_to
+  examples: |
+    - WHERE TO APPLY FOR THE INTERNSHIP?
+    - Where should I submit my internship application?
+
+- intent: group_info
+  examples: |
+    - Is there a group dedicated to providing updates and information?
+    - Are there any groups where I can stay informed and receive updates?
+    - Is there a group that offers updates and information?
+    - Do you know of any groups that share updates and information?
+    - Can you point me to a group for staying updated and informed?
+    - Are there any groups that cater to updates and informational content?
+    - Is there a group I can join for the latest updates and information?
+    - Are there any information-sharing groups or communities?
+    - Are there groups focused on disseminating updates and information?
+    - Can you recommend any groups that provide updates and information?
+
+- intent: start_when
+  examples: |
+    - when the internship is going to start?
+    - When will the internship commence?
+    - Do you have a start date for the internship?
+    - When is the internship scheduled to begin?
+    - Can you provide the internship's start date?
+    - When does the internship kick off?
+    - What's the internship's starting date?
+    - When can we expect the internship to initiate?
+    - When is the internship set to get underway?
+    - At what point will the internship begin?
+    - When does the internship launch?
+    - When is the internship slated to start?
+
+- intent: difference
+  examples: |
+    - what is the difference in 6, 8, 12 weeks internships?
+    - How do 6, 8, and 12-week internships vary?
+    - Can you explain the distinctions between 6, 8, and 12-week internships?
+    - What sets apart 6, 8, and 12-week internships from each other?
+    - In what ways do 6, 8, and 12-week internships differ?
+    - Could you elucidate the differences among 6, 8, and 12-week internships?
+    - What distinguishes 6, 8, and 12-week internships?
+    - Could you outline the contrasts between 6, 8, and 12-week internships?
+    - How do 6, 8, and 12-week internships contrast with one another?
+    - What are the dissimilarities between 6, 8, and 12-week internships?
+    - Can you shed light on how 6, 8, and 12-week internships differ?
+    - In what aspects do 6, 8, and 12-week internships diverge?
+
+- intent: offerletter-cert
+  examples: |
+    - will there be offer letters and certificates?
+    - Can we expect both offer letters and certificates?
+    - Will offer letters and certificates be provided?
+    - Are there plans to issue offer letters and certificates?
+    - Can we anticipate receiving both offer letters and certificates?
+    - Is it part of the program to provide offer letters and certificates?
+    - Will there be official letters of offer and certificates?
+    - Do we receive offer letters and certificates as part of the process?
+    - Can we count on receiving offer letters and certificates?
+    - Is there a provision for both offer letters and certificates?
+    - Will we be granted offer letters and certificates?
+    - Are both offer letters and certificates included?
+
+- intent: domains
+  examples: |
+    - what are various domains for internship?
+    - What internship fields are available?
+    - In which areas can I pursue an internship?
+    - What are the different internship domains?
+    - Can you list the various internship sectors?
+    - Which internship specializations are there?
+    - What fields can I explore for internships?
+    - Are there diverse internship domains to choose from?
+    - What are the internship options across different areas?
+    - Could you enumerate the internship sectors for me?
+    - What internship categories are open?
+    - In which domains can I find internship opportunities?
+
+
+- intent: internship-help
+  examples: |
+    - will participants get any help during the project?
+    - Will there be assistance available for participants throughout the project?
+    - Can participants expect support during the project?
+    - Is there help provided to participants during their project involvement?
+    - Will assistance be extended to participants throughout the project duration?
+    - Are there resources available to aid participants during their project work?
+    - Do participants receive any guidance or support during the project?
+    - Is there any form of assistance for participants while working on the project?
+    - Can participants count on receiving help during the project?
+    - Will there be any form of support for participants as they engage in the project?
+    - Is assistance offered to participants throughout their project activities?
+    - Are participants offered any help or support during their project participation?
+
+- intent: apointment_letter
+  examples: |
+    - when participants will get the appointment letter?
+    - When can participants expect to receive their appointment letter?
+    - What is the anticipated timeframe for participants to receive the appointment letter?
+    - At what point will participants be provided with the appointment letter?
+    - When is the scheduled distribution of the appointment letter to participants?
+    - When will participants be granted the appointment letter?
+    - When should participants be on the lookout for the appointment letter?
+    - What is the timeline for participants to obtain the appointment letter?
+    - When is it expected that participants will obtain the appointment letter?
+    - At what juncture will participants be given their appointment letter?
+    - When will the appointment letters be handed out to participants?
+    - When will participants be informed about the appointment letter?
+
+- intent: internship_completion
+  examples: |
+    - what is successful completion of internship?
+    - What constitutes a successful internship completion?
+    - How do you define a successful internship finish?
+    - What are the criteria for considering an internship completed successfully?
+    - Can you describe what qualifies as a successful internship conclusion?
+    - What benchmarks indicate the successful completion of an internship?
+    - How is the successful conclusion of an internship determined?
+    - What are the standards for achieving a successful internship completion?
+    - When is an internship considered to be successfully completed?
+    - What are the key indicators of a successful internship finish?
+    - What characterizes a successful internship culmination?
+    - How can one ascertain that an internship has been completed successfully?
+
+- intent: more_than_one_domain
+  examples: |
+    - can participants intern in more than one domain simultaneously?
+    - Is it possible for participants to engage in multiple domains during their internship concurrently?
+    - Can participants undertake internships in multiple domains at the same time?
+    - Are participants allowed to intern in more than one domain simultaneously?
+    - Is there an option for participants to intern across multiple domains simultaneously?
+    - Do participants have the flexibility to intern in multiple domains concurrently?
+    - Can participants simultaneously intern in multiple areas of interest?
+    - Is it feasible for participants to intern in more than one domain simultaneously?
+    - Are participants permitted to intern concurrently in various domains?
+    - Can participants juggle internships in multiple domains simultaneously?
+    - Is interning in more than one domain simultaneously an option for participants?
+    - Are participants given the opportunity to intern in multiple domains simultaneously?
+
+- intent: choose-change_domain-duration
+  examples: |
+    - will participants be able to choose/change the domain & duration for internship?
+    - Is there flexibility for participants to select or modify their internship domain and duration?
+    - Can participants exercise the option to pick or alter their internship domain and duration?
+    - Do participants have the freedom to select or adjust both the internship domain and its duration?
+    - Is it possible for participants to make choices or adjustments regarding their internship domain and duration?
+    - Are participants granted the ability to decide or modify their internship domain and duration?
+    - Is there room for participants to decide or alter their internship domain and duration?
+    - Do participants enjoy the liberty of choosing or modifying the internship domain and duration?
+    - Are participants afforded the opportunity to select or change their internship domain and duration?
+    - Can participants make decisions about or change both the internship domain and its duration?
+    - Is it within participants' purview to opt for or revise their internship domain and duration?
+    - Are participants allowed to make choices or adjustments related to their internship's domain and duration?
+
+- intent: paid
+  examples: |
+    - internship will be paid or free?
+    - Is the internship compensated or unpaid?
+    - Will the internship come with a stipend or be unpaid?
+    - Is the internship remunerated or offered without pay?
+    - Do participants receive payment for the internship, or is it unpaid?
+    - Will the internship be monetarily compensated, or is it without compensation?
+    - Is there a financial aspect to the internship, or is it provided for free?
+    - Can participants expect to receive payment for the internship, or is it voluntary?
+    - Is the internship compensated, or is it provided as a no-cost opportunity?
+    - Will there be financial compensation for the internship, or is it unpaid?
+    - Does the internship involve payment, or is it a no-cost experience?
+    - Is the internship offered with a stipend, or is it given without compensation?
+
+- intent: eligiblity-selection_criteria
+  examples: |
+    - what is the eligibility or selection criteria for participating in this internship?
+    - What are the prerequisites or criteria for participating in this internship?
+    - Could you outline the eligibility and selection criteria for this internship?
+    - What conditions or criteria must be met to join this internship?
+    - Can you provide information about the requirements for participating in this internship?
+    - Do you have details regarding the qualifications or selection standards for this internship?
+    - Are there specific criteria or prerequisites for eligibility in this internship?
+    - What standards or qualifications should candidates meet to take part in this internship?
+    - Could you elucidate the conditions or standards for acceptance into this internship?
+    - What are the necessary qualifications or selection guidelines for this internship?
+    - Can you explain the eligibility and criteria for being part of this internship?
+    - Are there any particular requirements or selection criteria for involvement in this internship?
+
+
+- intent: graduates_freshers
+  examples: |
+    - can graduates and freshers apply for this internship?
+    - Is this internship open to both graduates and individuals new to the field?
+    - Are both recent graduates and newcomers eligible to apply for this internship?
+    - Can both graduates and those with limited experience apply for this internship?
+    - Is this internship available for both graduates and those just starting out?
+    - Are both graduates and entry-level candidates allowed to seek this internship?
+    - Does this internship welcome applications from both graduates and beginners?
+    - Can both recent graduates and individuals with no prior experience apply for this internship?
+    - Is this internship accessible to both graduates and novices in the industry?
+    - Are both graduates and those with little experience considered for this internship?
+    - Can both recent graduates and newcomers to the field consider applying for this internship?
+    - Is this internship an option for both graduates and those new to the profession?
+
+- intent: timeings
+  examples: |
+    - timings for internship
+    - What are the hours for the internship?
+    - Could you provide the schedule for the internship?
+    - What is the internship's daily schedule?
+    - When are the internship hours?
+    - Can you share the timing details for the internship?
+    - When does the internship take place each day?
+    - Do you have information on the internship's timing?
+    - Can you let me know the internship's time frame?
+    - What are the internship's operational hours?
+    - Could you specify the internship's timing?
+    - When is the internship scheduled each day?
+
+
+- intent: machine
+  examples: |
+    - do we require laptop specifically for the projects?
+    - Is a laptop specifically needed for the projects?
+    - Do we need a laptop in particular for the projects?
+    - Is a laptop a necessity for these projects?
+    - Is a laptop mandatory for project work?
+    - Are laptops specifically required for project-related tasks?
+    - Must we have a laptop for the projects?
+    - Is a laptop essential for project participation?
+    - Do projects necessitate the use of a laptop?
+    - Is a laptop specifically called for in project assignments?
+    - Is it necessary to use a laptop for these projects?
+    - Do the projects mandate having a laptop on hand?
+
+- intent: how_to_choose_domain
+  examples: |
+    - how to choose the domain?
+    - What is the process for selecting the domain?
+    - How can one go about picking a domain?
+    - What steps are involved in choosing the domain?
+    - How do you decide on the domain?
+    - What's the method for selecting the domain?
+    - What criteria guide the selection of the domain?
+    - How do you make a choice regarding the domain?
+    - What considerations factor into domain selection?
+    - What's the approach to domain decision-making?
+    - What factors help in the domain selection process?
+    - How can you determine the most suitable domain?
+
+- intent: data
+  examples: |
+    - will data be provided for data analytics internship?
+    - Will there be data available for the data analytics internship?
+    - Is data supplied for the data analytics internship?
+    - Can participants access data during the data analytics internship?
+    - Is data provided to support the data analytics internship?
+    - Will there be datasets for the data analytics internship?
+    - Are participants given data for the data analytics internship?
+    - Is data furnished for use in the data analytics internship?
+    - Can participants expect access to data in the data analytics internship?
+    - Will there be data resources for the data analytics internship?
+    - Is data made available for participants in the data analytics internship?
+    - Do participants receive data sets for the data analytics internship?
+
+
+# IAC Questions and answers =============================>
+
+- intent: iac
+  examples: |
+    - What is Industry- Academia Community (IAC)?
+    - Could you explain what the Industry-Academia Community (IAC) entails?
+    - Can you provide information about the Industry-Academia Community (IAC)?
+    - What is the Industry-Academia Community (IAC)?
+    - Could you define the term Industry-Academia Community (IAC)?
+    - Can you describe the Industry-Academia Community (IAC)?
+    - What does the Industry-Academia Community (IAC) refer to?
+    - Can you give me details about the Industry-Academia Community (IAC)?
+    - What constitutes the Industry-Academia Community (IAC)?
+    - Could you shed light on the Industry-Academia Community (IAC)?
+    - Can you elaborate on the concept of the Industry-Academia Community (IAC)?
+    - What does the term Industry-Academia Community (IAC) mean?
+
+- intent: perks_of_iac
+  examples: |
+    - What are the benefits of being part of IAC?
+    - What advantages come with being a member of IAC?
+    - Can you outline the perks of participating in IAC?
+    - What are the gains associated with joining IAC?
+    - Could you detail the positive aspects of IAC membership?
+    - Can you elucidate the benefits of being involved in IAC?
+    - What do you stand to gain by being part of IAC?
+    - Could you explain the privileges of IAC membership?
+    - What are the favorable outcomes of engaging in IAC?
+    - Can you describe the rewards of being a member of IAC?
+    - What are the pluses of participating in IAC?
+    - Could you list the advantages of being part of IAC?
+
+- intent: fees
+  examples: |
+    - Do I need to pay any fees to be a part of this community?
+    - Is there a requirement for fees to join this community?
+    - Do I have to make any payments for community membership?
+    - Is there a fee associated with becoming a part of this community?
+    - Is there a cost involved in joining this community?
+    - Will I need to pay any charges for community participation?
+    - Are there any fees associated with community membership?
+    - Does community enrollment come with any financial obligations?
+    - Do I need to allocate funds for community inclusion?
+    - Is there a membership fee for this community?
+    - Are there any costs linked to community membership?
+    - Will I be required to pay any fees to be part of this community?
+
+- intent: activity_participation
+  examples: |
+    - Do I need to participate in all the activities?
+    - Is it mandatory to engage in all the activities?
+    - Do I have to partake in every activity?
+    - Must I be involved in all the activities?
+    - Is there an obligation to participate in all the activities?
+    - Do I need to join in every activity?
+    - Is it necessary to take part in each activity?
+    - Am I expected to be present for all the activities?
+    - Is full participation in all activities required?
+    - Are all the activities compulsory for me to attend?
+    - Do I need to be active in every activity?
+    - Is it expected that I participate in all the activities?
+
+- intent: work_hours
+  examples: |
+    - How many hours of work are expected from me?
+    - What is the anticipated time commitment from me?
+    - Can you specify the hours of work expected from me?
+    - How many hours of effort are required from me?
+    - What is the projected workload in terms of hours?
+    - Do you have an estimate of the work hours expected from me?
+    - Can you clarify the expected time investment on my part?
+    - How many hours of work should I be prepared for?
+    - What is the presumed time dedication I need to provide?
+    - Is there a particular hourly requirement for my work?
+    - Do you have a target number of hours for my involvement?
+    - Can you outline the time expectations for my work?
+
+
+
+- intent: necessary_to_join
+  examples: |
+    - Is it necessary to become a member of Industry-Academia Community to avail the benefits?
+    - Do I have to join the Industry-Academia Community to access the benefits?
+    - Is membership in the Industry-Academia Community a prerequisite for enjoying the benefits?
+    - Must I be a member of the Industry-Academia Community in order to receive the benefits?
+    - Is it mandatory to become part of the Industry-Academia Community to take advantage of the benefits?
+    - Is membership in the Industry-Academia Community necessary to benefit from the advantages?
+    - Do I need to enroll in the Industry-Academia Community to make use of the benefits?
+    - Is it a requirement to be a member of the Industry-Academia Community to get the benefits?
+    - Is joining the Industry-Academia Community a condition for accessing the benefits?
+    - Do I need to become a part of the Industry-Academia Community to receive the benefits?
+    - Is it obligatory to be in the Industry-Academia Community to avail of the benefits?
+    - Is it essential to be a member of the Industry-Academia Community to enjoy the benefits?
+
+
+- intent: flexiblity
+  examples: |
+    - Will I get the flexibility to participate in my activities at my convenience?
+    - Can I choose when to participate in activities for flexibility?
+    - Is there flexibility for me to engage in activities at my convenience?
+    - Will I have the freedom to schedule my activities as per my convenience?
+    - Is it possible to participate in activities according to my own schedule for flexibility?
+    - Can I decide when to take part in activities to suit my convenience?
+    - Will I be able to adjust my participation in activities to my convenience?
+    - Is there room for me to customize my activity participation for flexibility?
+    - Can I plan my activity involvement at my convenience for flexibility?
+    - Will I be given the option to adapt my activity schedule to my convenience?
+    - Is it allowed for me to time my participation in activities to my convenience?
+    - Can I arrange my activities to align with my convenience for flexibility?
+
+
+- intent: previous_record
+  examples: |
+    - Has this program helped students earlier?
+    - In the past, have students benefited from this program?
+    - Did this program yield positive outcomes for students in the past?
+    - Has this program proven advantageous to students previously?
+    - Were students previously able to gain from this program?
+    - Has this program been successful in assisting students before?
+    - Did students experience positive results from this program in the past?
+    - Has this program had a history of aiding students?
+    - Were there instances of students receiving help from this program previously?
+    - Has this program shown its value to students in the past?
+    - Did students find value in this program in previous instances?
+    - Has this program been effective in supporting students in earlier cases?
+
+
+
+- intent: how_conducted
+  examples: |
+    - How will the internship be conducted?
+    - What is the plan for conducting the internship?
+    - Can you explain the approach to conducting the internship?
+    - How is the internship going to be carried out?
+    - What is the method for organizing the internship?
+    - Can you describe the process of how the internship will take place?
+    - How will the internship proceedings be handled?
+    - What arrangements are in place for the internship's execution?
+    - What is the strategy for the internship's implementation?
+    - How will the internship operations be managed?
+    - Can you outline the procedures for conducting the internship?
+    - What are the steps involved in the internship's execution?
+
+
+#======== Multi language Hindi
+- intent: kaise_apply
+  examples: |
+    - इंटर्नशिप के लिए कहां आवेदन करें?
+    - इंटर्नशिप के लिए आवेदन करने का स्थान क्या है?
+    - apply kaise kare?
+
+- intent: kaise_telegram
+  examples: |
+    - क्या अपडेट/जानकारी के लिए कोई समूह है?
+    - क्या किसी समूह में अपडेट या जानकारी के लिए कुछ है?
+    - koi group hae updates ke liye?
+
+- intent: kaise_help
+  examples: |
+    - क्या परियोजना के दौरान प्रतिभागियों को कोई सहायता मिलेगी?
+    - क्या परियोजना के दौरान प्रतिभागियों को सहायता उपलब्ध होगी?
+    - kya project ke dooraan sahaayata milege?
+
+- intent: kaise_domain
+  examples: |
+    - क्या प्रतिभागी एक साथ एक से अधिक डोमेन में इंटर्नशिप कर सकते हैं?
+    - क्या प्रतिभागी एक से अधिक डोमेन में एक साथ इंटर्नशिप कर सकते हैं?
+    - kya ek saath ek se adhik domen mein internship kar sakate hain?
+
+- intent: kaise_samay
+  examples: |
+    - इंटर्नशिप के लिए समय
+    - इंटर्नशिप के लिए समय क्या होना चाहिए?
+    - kitna samay internship mae dena hoga?
+
+- intent: kaise_device
+  examples: |
+    - क्या हमें परियोजनाओं के लिए विशेष रूप से लैपटॉप की आवश्यकता है?
+    - क्या हमें परियोजनाओं के लिए विशेष रूप से लैपटॉप का उपयोग करना होगा?
+    - kya internship ke liye laptop ya pc jaroori hae?
+
+- intent: kaise_res
+  examples: |
+    - क्या डेटा एनालिटिक्स इंटर्नशिप के लिए डेटा उपलब्ध कराया जाएगा?
+    - क्या डेटा एनालिटिक्स इंटर्नशिप के लिए डेटा प्रदान किया जाएगा?
+    - kya data analytics internship ke lie deta upalabdh karaaya jaega?
