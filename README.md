@@ -5,7 +5,9 @@
 </center>
 
 ---
+## demo on actual devices
 
+![gif video](https://github.com/tusuii/SmartSolveAI_Unified_ChatBot_Internship_Project/blob/main/ezgif.com-video-to-gif.gif)
 
 ## Table of Contents
 - [Background](#background)
