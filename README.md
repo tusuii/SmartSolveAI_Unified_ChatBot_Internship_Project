@@ -15,7 +15,7 @@
 - [Hardware Requirements](#hardware-requirements)
 - [Software Requirements](#software-requirements)
 - [Docker](#docker)
-- [script install](#assumptions)
+- [script install](#script-install)
 - [Functional Requirements](#functional-requirements)
 - [Non-Functional Requirements](#non-functional-requirements)
 - [External Interface Requirements](#external-interface-requirements)
