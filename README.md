@@ -165,17 +165,35 @@ Follow these steps to run [Your Application Name] using the provided Python scri
 
 3. **Run the Application**:
 
-   Execute the Python script to run [Your Application Name]:
+   Execute the Python script to install dependency for  ChatBot:
 
    ```bash
-   python your_app.py
+   python setup.py
+
+4. **Run the Chatbot Server**:
+
+   Start the Rasa chatbot server using the following command:
+
+   ```bash
+   rasa run -m models --enable-api --cors "*" --debug
    ```
 
-   Replace `your_app.py` with the actual name of your Python script.
+   - `-m models`: Specifies the directory where the trained models are located.
+   - `--enable-api`: Enables the Rasa API, allowing you to interact with the chatbot through HTTP requests.
+   - `--cors "*"`: Allows CORS from any origin (for development purposes). Be cautious when deploying this in production.
+   - `--debug`: Run the server in debug mode for detailed logs (optional).
 
-4. **Access Your Application**:
+5. **Access the Chatbot API**:
 
-   Once the script is running, you can access your application by opening a web browser and navigating to `http://localhost:8080` (or the appropriate URL and port specified in your script).
+   You can now interact with the chatbot through the API. By default, the API is available at `http://localhost:5005/webhooks/rest/webhook`. You can use tools like `curl` or Postman to send messages to the chatbot.
+
+## Customization
+
+- **Training Data**: Customize your chatbot's behavior by modifying the training data in the `data/` directory. You can add more intents, stories, and responses to improve the chatbot's capabilities.
+
+- **Configuration**: Adjust the Rasa configuration in the `config.yml` file to fine-tune the chatbot's behavior, NLP pipeline, and more.
+
+
 
 ## Configuration
 
