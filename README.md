@@ -259,5 +259,3 @@ Contributions to this project are welcome! Please see the [Contribution Guidelin
 This project is licensed under the [MIT License](./LICENSE).
 
 ---
-
-This README provides a comprehensive overview of your project, its requirements, and how to get started. Be sure to replace the placeholder content with specific information relevant to your project.
